@@ -1,0 +1,10 @@
+.banner-products{
+    height:415px;
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+    background-image:url(../kp_website_desktop/images/banner-products.jpg);
+    object-fit:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
