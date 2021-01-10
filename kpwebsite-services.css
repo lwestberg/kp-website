@@ -1,0 +1,113 @@
+.banner-services{
+    height:415px;
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+    background-image:url(../kp_website_desktop/images/banner-services.jpg);
+    object-fit:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+
+.bannerquote-products{
+    color:#ffffff;
+    margin-top:240px;
+    margin-left:100px;
+    padding:50px 20px 165px 0px;
+    font-size:38px;
+    font-weight:bold;
+    line-height:30px;
+    letter-spacing:normal;
+    float:left;
+  }
+
+  /* contact section*/
+  h12{
+    font-size:200%;
+    text-align:left;
+    font-weight:normal;
+    color:#215f86;
+    margin-top:60px;
+    margin-right:200px;
+    margin-bottom:2px;
+  }
+  
+  h13{
+    font-size:150%;
+    text-align:left;
+    font-weight:normal;
+    color:#9dc2dd;
+    margin-top:20px;
+    margin-bottom:50px;  }
+  
+  #comprintproducts{
+    font-size:105%;
+    padding:50px, 10px, 0px, 120px;
+    margin-left:120px;
+    margin-bottom:50px;
+    width:46.5%;
+    float:left;
+  }
+
+  #comprintproducts-ul{
+    padding-top:20px;
+    margin-top:50px;
+    list-style-type:none;
+    font-family:mr-eaves-modern, sans-serif;
+    font-size:100%;
+    font-weight:normal;
+    word-spacing:10px;
+    color:black;
+  }
+
+  #sidebar-products{
+    height:300px;
+    padding-right:150px;
+    padding-top:100px;
+    padding-bottom:105px;
+    float:right;
+  }
+
+  /* #sidebar-services{
+    height:300px;
+    padding-right:200px;
+    padding-top:65px;
+    padding-bottom:105px;
+    float:right;
+  }
+
+  contact section
+  #sidebar-products{
+    height:300px;
+    padding-right:100px;
+    padding-top:100px;
+    padding-bottom:105px;
+    float:right;
+  }
+
+    #comproducts{
+    font-size:105%;
+    float:left;
+    padding-bottom:50px;
+  }
+  
+  h11{
+    float:left;
+    margin-left:120px;
+    margin-top:100px;
+    width:50%;
+    font-size:200%;
+    font-weight:normal;
+    color:#215f86;
+  }
+
+p5{
+    float:left; 
+    margin-top:150;
+    margin-left:120px;
+    font-family:mr-eaves-modern, sans-serif;
+    font-size:150%;
+    font-weight:normal;
+    word-spacing:3px;
+    color:#9dc2dd;
+}*/
