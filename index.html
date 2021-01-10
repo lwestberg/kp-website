@@ -4,7 +4,7 @@
 <head>
     <meta charset=UTF-8>
     <title>Kanabec Publications, Inc.</title>
-    <link rel="stylesheet" type="text/css" href="kp.css" />
+    <link rel="stylesheet" type="text/css" href="kpwebsite.css" />
     <link rel="stylesheet" href="https://use.typekit.net/rxl6rbf.css">
     <link rel="stylesheet" href="https://use.typekit.net/skp0nff.css">
 </head>
@@ -12,20 +12,38 @@
 
 
 <body>
-    <header class="top">
-        <span class="headerlogo">
-            <img src="../kp_website/images/KP_logo-top.jpg" alt="Kanabec Publications, Inc. logo"></span>
-        <div class="headingphone">320-679-2661</div>
-    </header>
+    <div class="wrapper">
+        <header class="top">
+            <span class="headerlogo">
+                <img src="../kp_website_desktop/images/KP_logo-top.jpg" alt="Kanabec Publications, Inc. logo"></span>
+            <div class="headingphone">320-679-2661</div>
+        </header>
+ 
 
 
     <!--navigation-->
     <nav>
         <ul>
             <li class="selected"><a href="index.html">HOME</a></li>
-            <li><a href="about us.html">ABOUT</a></li>
+            <li><a>
+                    <span-font>I
+                </a></span-font>
+            </li>
+            <li><a href="about.html"><span>ABOUT US</a></span></li>
+            <li><a>
+                    <span-font>I
+                </a></span-font>
+            </li>
             <li><a href="products.html">PRODUCTS</a></li>
-            <li><a href="customer service.html">SERVICE</a></li>
+            <li><a>
+                    <span-font>I
+                </a></span-font>
+            </li>
+            <li><a href="services.html"><span>SERVICES</a></span></li>
+            <li><a>
+                    <span-font>I
+                </a></span-font>
+            </li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
@@ -34,16 +52,18 @@
     <main class="banner">
         <span class="bannerheading">HIGH QUALITY<br>PRINTING<br>SOLUTIONS<br>
             <span class="bannercopy">We offer the best in quality printing<br> at affordable prices.
-                <br><span class="bannerquote">CALL OR EMAIL<br>FOR A QUOTE</span>
+                <br><span class="bannerquote">
+                    <a href="mailto:printing@moramn.com" style=text-decoration:none>CALL OR EMAIL<br>FOR A QUOTE</a>
+                </span>
     </main>
 
     <!--icons-->
     <div class="tableContainer">
         <div id="tableRow">
             <section id="products">
-                <img id="productpic" src="../kp_website/images/icon-printproducts.jpg" alt="brochure icon"
+                <img id="productpic" src="../kp_website_desktop/images/icon-printproducts.jpg" alt="brochure icon"
                     class="center">
-                <figcaption>COMMERCIAL PRINTING<br>PRODUCTS</figcaption>
+                <figcaption><a href="#h1" style=text-decoration:none>COMMERCIAL PRINTING<br>PRODUCTS</a></figcaption>
                 <iconcopy>We provide full-color custom business<br>
                     printing solutions at affordable prices. Our<br>
                     professional staff prides itself on quick<br>
@@ -52,9 +72,9 @@
             </section>
 
             <section id="services">
-                <img id="servicepic" src="../kp_website/images/icon-printservices.jpg" alt="computer screen icon"
-                    class="center">
-                <figcaption>COMMERCIAL PRINTING<br>SERVICES</figcaption>
+                <img id="servicepic" src="../kp_website_desktop/images/icon-printservices.jpg"
+                    alt="computer screen icon" class="center">
+                <figcaption><a href="#h3" style=text-decoration:none>COMMERCIAL PRINTING<br>SERVICES</a></figcaption>
                 <iconcopy>Our professional staff can take your<br>
                     project from start to finish. We offer<br>
                     in-house graphic design and finishing<br>
@@ -62,17 +82,18 @@
             </section>
 
             <section id="copycenter">
-                <img id="copycenterpic" src="../kp_website/images/icon-copycenter.jpg" alt="book icon" class="center">
-                <figcaption>COPY CENTER</figcaption>
+                <img id="copycenterpic" src="../kp_website_desktop/images/icon-copycenter.jpg" alt="book icon"
+                    class="center">
+                <figcaption><a href="#h5" style=text-decoration:none>COPY CENTER</a></figcaption>
                 <iconcopy>Stop by our copy center for same<br>
                     day, full-color copying, scanning<br>
                     and faxing.</iconcopy>
             </section>
 
             <section id="advertising">
-                <img id="advertisingpic" src="../kp_website/images/icon-advertising.jpg" alt="newspaper icon"
+                <img id="advertisingpic" src="../kp_website_desktop/images/icon-advertising.jpg" alt="newspaper icon"
                     class="center">
-                <figcaption>NEWS/ADVERTISING</figcaption>
+                <figcaption><a href="https://www.moraminn.com/place_an_ad/" style=text-decoration:none>NEWS/ADVERTISING</a></figcaption>
                 <iconcopy>Advertise with Northstar Media/Kanabec<br>
                     Publications and get noticed by your<br>
                     local community.</iconcopy>
@@ -80,35 +101,63 @@
         </div>
     </div>
 
+    <!--print products section-->
     <div class="sidebar">
-        <img src="../kp_website/images/intropic_horizontal2.jpg" alt="intro image">
+        <img src="../kp_website_desktop/images/products-image-new.jpg" alt="print materials">
     </div>
 
-    <!--print products section-->
     <div id="printproducts">
-        <h1>COMMERCIAL PRINTING PRODUCTS</h1>
-        <h2>We provide full-color, custom printing solutions</H2>
+        <h1><a name="h1">COMMERCIAL PRINTING PRODUCTS</a></h1>
+        <h2>We provide full-color, custom printing solutions.</h2>
         <printproducts-ul>
             <li>Create beautiful, full-color, two-sided business cards.</li>
             <li>Customize your brochures to fit your company needs.</li>
             <li>Stay up-to-date with vibrant, full-color newsletter.</li>
             <li>No job is too large for our large format printing service.</li>
         </printproducts-ul>
+        <button class="button button1"><a href="products.html" style=text-decoration:none>SEE ALL PRODUCTS</a></button>
     </div>
 
     <!--print services section-->
-    <!--<div class=roducts-container>
-        <div id="printservices">
-            <h1>COMMERCIAL PRINTING SERVICES</h1>
-            <h2>We can take your projects from start to finish.</H2>
-            <printservices-ul>
-                <li>Graphic Design Services.</li>
-                <li>Bindery.</li>
-                <li>Fulfillment.</li>
-                <li>Large Format Printing.</li>
-            </printservices-ul>
+    <div class="copybox">
+        <div id="sidebar-services">
+            <img src="../kp_website_desktop/images/services-image-home.jpg" alt="stack of booklets showing binding">
         </div>
-    </div>-->
+
+        <div id="printservices">
+            <h3><a name="h3"></a>COMMERCIAL PRINTING SERVICES</h3></a></h3>
+            <h4>We can take your projects from start to finish.</h4>
+            <printservices-ul dir="rtl">
+                <li>Graphic Design Services</li>
+                <li>Bindery</li>
+                <li>Fulfillment</li>
+                <li>Large Format Printing</li>
+            </printservices-ul>
+            <button class="button button2"><a href="services.html" style=text-decoration:none>SEE ALL PRODUCTS</a></button>
+        </div>
+    </div>
+
+    <!--copy center section-->
+    <div class="sidebar-copycenter">
+        <img src="../kp_website_desktop/images/copy-center-image-home.jpg" alt="print materials">
+    </div>
+
+    <div id="ccenter">
+        <h5>COPY CENTER</h5>
+        <h6>Stop by our copy center for same day service.</h6>
+        <ccenter-ul>
+            <li>Full-Color Copies</li>
+            <li>Scanning</li>
+            <li>Faxing</li>
+        </ccenter-ul><br><br><br><br><br>
+        <h7><a name="h5"></a>107 Park Street South, Mora, MN 55051<br>
+            320-679-2661</a></h7>
+
+    <!--footer-->
+        <footer class="footer"></footer>
+    </div>
+</div>
+
 
 </body>
 
