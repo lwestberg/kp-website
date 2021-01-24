@@ -8,14 +8,47 @@ body{
 }
 
 .wrapper{
-  min-height:100%;
+  min-height: calc(100vh - 95px);
+  min-width:100%;
   margin-bottom:-50px;
 }
 
 .footer,.push{
-  height:100px;
+  display:flex;
+  padding-left:130px;
+  padding-top:20px;
+  clear:both;
+  height:18vh;
   margin-top:100px;
   background-color:#215f86;
+}
+
+.footerh1{
+  list-style-type:none;
+  font-family:mr-eaves-modern, sans-serif;
+  font-size:110%;
+  font-weight:normal;
+  word-spacing:20px;
+  color:white; 
+}
+
+.footer-nav{
+  list-style-type:none;
+  font-family:mr-eaves-modern, sans-serif;
+  font-size:100%;
+  font-weight:normal;
+  word-spacing:20px;
+  color:white;
+  margin-bottom:10px;
+}
+
+.footer-nav ul{
+  list-style-type:none;
+  font-family:mr-eaves-modern, sans-serif;
+  font-size:100%;
+  font-weight:normal;
+  word-spacing:20px;
+  color:white;
 }
 
 /*logo*/
@@ -391,7 +424,6 @@ h4{
   background:#ffffff;
   padding-left:220px;
   margin-top:80px;
-  margin-bottom:10px;
   float:left;
 } 
 
