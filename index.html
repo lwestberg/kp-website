@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="kpwebsite.css" />
     <link rel="stylesheet" href="https://use.typekit.net/rxl6rbf.css">
     <link rel="stylesheet" href="https://use.typekit.net/skp0nff.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 </head>
 
 
@@ -18,7 +19,39 @@
                 <img src="../kp_website_desktop/images/KP_logo-top.jpg" alt="Kanabec Publications, Inc. logo"></span>
             <div class="headingphone">320-679-2661</div>
         </header>
- 
+
+<!--script--> 
+<script>
+    function rotateimages(){
+        $(".box").css("visibility", "visible");
+        var switchaxis = $(".current");
+        var myid = switchaxis.attr("id");
+        if(myid = "boxthree"){
+            $("#boxzero").addClass("current").removeClass("waiting");
+            switchaxis.addClass("waiting").removeClass("current");
+            return ;
+        }
+        switchaxis.next().addClass("current").removeClass("waiting");
+        switchaxis.removeClass("current");
+        //switchaxis.addClass("waiting");
+        
+     //   switchaxis.addClass("waiting").removeClass("current");
+
+    }
+
+    $(document).ready(function(){
+
+    setInterval("rotateimages()", 5000);
+    });
+</script>
+
+   <!--java-->     
+    <div class="slider">
+        <div id="fadedscreen"></div>
+        <div id="boxzero" class="box current"></div>
+        <div id="boxone" class="box waiting"></div>
+        <div id="boxtwo" class="box waiting"></div>
+    </div>
 
 
     <!--navigation-->
@@ -50,6 +83,7 @@
 
     <!--banner-->
     <main class="banner">
+
         <span class="bannerheading">HIGH QUALITY<br>PRINTING<br>SOLUTIONS<br>
             <span class="bannercopy">We offer the best in quality printing<br> at affordable prices.
                 <br><span class="bannerquote">
