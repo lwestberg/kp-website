@@ -1,0 +1,27 @@
+#boxzero{
+    background-image: url(images/0.jpg);
+    background-size: cover;
+    background-position: center center;   
+}
+
+#boxone{
+    background-image:url(images/1.jpg);
+    background-size: cover;
+    background-position:center center;
+    visibility:hidden;
+}
+
+#boxtwo{
+    background-image:url(images/2.jpg);
+    background-size: cover;
+    background-position:center center;
+    visibility:hidden;
+}
+
+.current{
+    z-index:10;
+}
+
+.waiting{
+    z-index:3;
+}
