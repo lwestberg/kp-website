@@ -7,205 +7,241 @@
     <link rel="stylesheet" type="text/css" href="kpwebsite.css" />
     <link rel="stylesheet" type="text/css" href="kpwebsite-about.css" />
     <link rel="stylesheet" type="text/css" href="kpwebsite-contact.css" />
-    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssslider.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/rxl6rbf.css">
+    <link rel="stylesheet" href="https://use.typekit.net/skp0nff.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/
+    aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
-
-
 
 <body>
     <div class="wrapper">
         <header class="top">
             <span class="headerlogo">
-                <img src="../kp-website/images/KP_logo-top.jpg" alt="Kanabec Publications, Inc. logo"></span>
+                <img src="images/KP_logo-top.jpg" alt="Kanabec Publications, Inc. logo"></span>
             <div class="headingphone">320-679-2661</div>
         </header>
 
-<!--script--> 
-<script>
-    function rotateimages(){
-        $(".box").css("visibility", "visible");
-        var switchaxis = $(".current");
-        var myid = switchaxis.attr("id");
-        if(myid = "boxthree"){
-            $("#boxzero").addClass("current").removeClass("waiting");
-            switchaxis.addClass("waiting").removeClass("current");
-            return ;
-        }
-        switchaxis.next().addClass("current").removeClass("waiting");
-        switchaxis.removeClass("current");
-        //switchaxis.addClass("waiting");
+        <!--script-->
+        <script>
+            function rotateimages() {
+
+                $("box").css("visibility", "visible");
+                //        $( "div.current" ).next().css( "", "red" );
+                var switchaxis = $("current");
+
+                var myid = switchaxis.attr("id");
+
+
+                if (myid == "boxtwo") {
+                    // we can't use next() we need to manually set the classes and
+                    // restart the order ...
+                    $("#boxzero").addClass("current").removeClass("waiting");
+                    switchaxis.addClass("waiting").removeClass("current");
+                    return;
+                }
+
+                //        alert(myid);
+                switchaxis.next().addClass("current").removeClass("waiting");
+                switchaxis.removeClass("current");
+                switchaxis.addClass("waiting");
+
+                //        $( "div.current" ).next().addClass("current");
+                // note that when it gets to the lasat div element ... there are no longer any
+                // sibling elements to be sought by the .next() method ... so it will result in
+                // "undefined" ...
+
+
+            }
+
+            $(document).ready(function () {
+                setInterval("rotateimages()", 5000);
+            });
+        </script>
+
+        <!--java-->
+        <div class="slider">
+            <div id="fadedscreen"></div>
+            <div id="boxzero" class="box current">
+                <main class="banner">
+                    <span class="bannerheading">QUICK<br>TURNAROUND<br>
+                        <span class="bannercopy">Our professional staff will make sure<br> 
+                            your projects are quick and on-time.
+                            <br><span class="bannerquote">
+                                <a href="mailto:printing@moramn.com" style=text-decoration:none>CALL OR EMAIL<br>FOR A QUOTE</a>
+                            </span>
+                </main>
+            </div>
+
+            <div id="boxone" class="box waiting">
+                <main class="banner">
+                    <span class="bannerheading">GREAT<br>CUSTOMER<br>SERVICE<br>
+                        <span class="bannercopy">Our customer service representaties<br> 
+                            aim to give you fast, friendly serice<br> 
+                            you can count on.
+                            <br><span class="bannerquote">
+                                <a href="mailto:printing@moramn.com" style=text-decoration:none>CALL OR EMAIL<br>FOR A QUOTE</a>
+                            </span>
+            </div>
+            
+            <div id="boxtwo" class="box waiting">
+                <main class="banner">
+                    <span class="bannerheading">HIGH QUALITY<br>PRINTING<br>SOLUTIONS<br>
+                        <span class="bannercopy">We offer the best in quality printing<br> at affordable prices.
+                            <br><span class="bannerquote">
+                                <a href="mailto:printing@moramn.com" style=text-decoration:none>CALL OR EMAIL<br>FOR A QUOTE</a>
+                            </span>
+            </div>
+        </div>
+
+
+
+        <!--navigation-->
+        <nav>
+            <ul>
+                <li class="selected"><a href="index.html">HOME</a></li>
+                <li><a>
+                        <span-font>I
+                    </a></span-font>
+                </li>
+                <li><a href="about.html"><span>ABOUT US</a></span></li>
+                <li><a>
+                        <span-font>I
+                    </a></span-font>
+                </li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a>
+                        <span-font>I
+                    </a></span-font>
+                </li>
+                <li><a href="services.html"><span>SERVICES</a></span></li>
+                <li><a>
+                        <span-font>I
+                    </a></span-font>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!--banner-->
         
-     //   switchaxis.addClass("waiting").removeClass("current");
 
-    }
+        <!--icons-->
+        <div class="tableContainer">
+            <div id="tableRow">
+                <section id="products">
+                    <img id="productpic" src="images/icon-printproducts.jpg" alt="brochure icon" class="center">
+                    <figcaption><a href="#h1" style=text-decoration:none>COMMERCIAL PRINTING<br>PRODUCTS</a>
+                    </figcaption>
+                    <iconcopy>We provide full-color custom business<br>
+                        printing solutions at affordable prices. Our<br>
+                        professional staff prides itself on quick<br>
+                        turnaround and high quality products that<br>
+                        you can be proud to represent your company.</iconcopy>
+                </section>
 
-    $(document).ready(function(){
+                <section id="services">
+                    <img id="servicepic" src="images/icon-printservices.jpg" alt="computer screen icon" class="center">
+                    <figcaption><a href="#h3" style=text-decoration:none>COMMERCIAL PRINTING<br>SERVICES</a>
+                    </figcaption>
+                    <iconcopy>Our professional staff can take your<br>
+                        project from start to finish. We offer<br>
+                        in-house graphic design and finishing<br>
+                        services to help you create a stunning product.</iconcopy>
+                </section>
 
-    setInterval("rotateimages()", 5000);
-    });
-</script>
+                <section id="copycenter">
+                    <img id="copycenterpic" src="images/icon-copycenter.jpg" alt="book icon" class="center">
+                    <figcaption><a href="#h5" style=text-decoration:none>COPY CENTER</a></figcaption>
+                    <iconcopy>Stop by our copy center for same<br>
+                        day, full-color copying, scanning<br>
+                        and faxing.</iconcopy>
+                </section>
 
-   <!--java-->     
-    <div class="slider">
-        <div id="fadedscreen"></div>
-        <div id="boxzero" class="box current"></div>
-        <div id="boxone" class="box waiting"></div>
-        <div id="boxtwo" class="box waiting"></div>
-    </div>
-
-
-    <!--navigation-->
-    <nav>
-        <ul>
-            <li class="selected"><a href="index.html">HOME</a></li>
-            <li><a>
-                    <span-font>I
-                </a></span-font>
-            </li>
-            <li><a href="about.html"><span>ABOUT US</a></span></li>
-            <li><a>
-                    <span-font>I
-                </a></span-font>
-            </li>
-            <li><a href="products.html">PRODUCTS</a></li>
-            <li><a>
-                    <span-font>I
-                </a></span-font>
-            </li>
-            <li><a href="services.html"><span>SERVICES</a></span></li>
-            <li><a>
-                    <span-font>I
-                </a></span-font>
-            </li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-
-    <!--banner-->
-    <main class="banner">
-
-        <span class="bannerheading">HIGH QUALITY<br>PRINTING<br>SOLUTIONS<br>
-            <span class="bannercopy">We offer the best in quality printing<br> at affordable prices.
-                <br><span class="bannerquote">
-                    <a href="mailto:printing@moramn.com" style=text-decoration:none>CALL OR EMAIL<br>FOR A QUOTE</a>
-                </span>
-    </main>
-
-    <!--icons-->
-    <div class="tableContainer">
-        <div id="tableRow">
-            <section id="products">
-                <img id="productpic" src="../kp-website/images/icon-printproducts.jpg" alt="brochure icon"
-                    class="center">
-                <figcaption><a href="#h1" style=text-decoration:none>COMMERCIAL PRINTING<br>PRODUCTS</a></figcaption>
-                <iconcopy>We provide full-color custom business<br>
-                    printing solutions at affordable prices. Our<br>
-                    professional staff prides itself on quick<br>
-                    turnaround and high quality products that<br>
-                    you can be proud to represent your company.</iconcopy>
-            </section>
-
-            <section id="services">
-                <img id="servicepic" src="../kp-website/images/icon-printservices.jpg"
-                    alt="computer screen icon" class="center">
-                <figcaption><a href="#h3" style=text-decoration:none>COMMERCIAL PRINTING<br>SERVICES</a></figcaption>
-                <iconcopy>Our professional staff can take your<br>
-                    project from start to finish. We offer<br>
-                    in-house graphic design and finishing<br>
-                    services to help you create a stunning product.</iconcopy>
-            </section>
-
-            <section id="copycenter">
-                <img id="copycenterpic" src="../kp-website/images/icon-copycenter.jpg" alt="book icon"
-                    class="center">
-                <figcaption><a href="#h5" style=text-decoration:none>COPY CENTER</a></figcaption>
-                <iconcopy>Stop by our copy center for same<br>
-                    day, full-color copying, scanning<br>
-                    and faxing.</iconcopy>
-            </section>
-
-            <section id="advertising">
-                <img id="advertisingpic" src="../kp-website/images/icon-advertising.jpg" alt="newspaper icon"
-                    class="center">
-                <figcaption><a href="https://www.moraminn.com/place_an_ad/" style=text-decoration:none>NEWS/ADVERTISING</a></figcaption>
-                <iconcopy>Advertise with Northstar Media/Kanabec<br>
-                    Publications and get noticed by your<br>
-                    local community.</iconcopy>
-            </section>
-        </div>
-    </div>
-
-    <!--print products section-->
-    <div class="sidebar">
-        <img src="../kp-website/images/products-image-new.jpg" alt="print materials">
-    </div>
-
-    <div id="printproducts">
-        <h1><a name="h1">COMMERCIAL PRINTING PRODUCTS</a></h1>
-        <h2>We provide full-color, custom printing solutions.</h2>
-        <printproducts-ul>
-            <li>Create beautiful, full-color, two-sided business cards.</li>
-            <li>Customize your brochures to fit your company needs.</li>
-            <li>Stay up-to-date with vibrant, full-color newsletter.</li>
-            <li>No job is too large for our large format printing service.</li>
-        </printproducts-ul>
-        <button class="button button1"><a href="products.html" style=text-decoration:none>SEE ALL PRODUCTS</a></button>
-    </div>
-
-    <!--print services section-->
-    <div class="copybox">
-        <div id="sidebar-services">
-            <img src="../kp-website/images/services-image-home.jpg" alt="stack of booklets showing binding">
+                <section id="advertising">
+                    <img id="advertisingpic" src="images/icon-advertising.jpg" alt="newspaper icon" class="center">
+                    <figcaption><a href="https://www.moraminn.com/place_an_ad/"
+                            style=text-decoration:none>NEWS/ADVERTISING</a></figcaption>
+                    <iconcopy>Advertise with Northstar Media/Kanabec<br>
+                        Publications and get noticed by your<br>
+                        local community.</iconcopy>
+                </section>
+            </div>
         </div>
 
-        <div id="printservices">
-            <h3><a name="h3"></a>COMMERCIAL PRINTING SERVICES</h3></a></h3>
-            <h4>We can take your projects from start to finish.</h4>
-            <printservices-ul dir="rtl">
-                <li>Graphic Design Services</li>
-                <li>Bindery</li>
-                <li>Fulfillment</li>
-                <li>Large Format Printing</li>
-            </printservices-ul>
-            <button class="button button2"><a href="services.html" style=text-decoration:none>SEE ALL PRODUCTS</a></button>
+        <!--print products section-->
+        <div class="sidebar">
+            <img src="images/products-image-new.jpg" alt="print materials">
         </div>
-    </div>
 
-    <!--copy center section-->
-    <div class="sidebar-copycenter">
-        <img src="../kp-website/images/copy-center-image-home.jpg" alt="print materials">
-    </div>
+        <div id="printproducts">
+            <h1><a name="h1">COMMERCIAL PRINTING PRODUCTS</a></h1>
+            <h2>We provide full-color, custom printing solutions.</h2>
+            <printproducts-ul>
+                <li>Create beautiful, full-color, two-sided business cards.</li>
+                <li>Customize your brochures to fit your company needs.</li>
+                <li>Stay up-to-date with vibrant, full-color newsletter.</li>
+                <li>No job is too large for our large format printing service.</li>
+            </printproducts-ul>
+            <button class="button button1"><a href="products.html" style=text-decoration:none>SEE ALL
+                    PRODUCTS</a></button>
+        </div>
 
-    <div id="ccenter">
-        <h5>COPY CENTER</h5>
-        <h6>Stop by our copy center for same day service.</h6>
-        <ccenter-ul>
-            <li>Full-Color Copies</li>
-            <li>Scanning</li>
-            <li>Faxing</li>
-        </ccenter-ul><br><br><br><br><br>
-        <h7><a name="h5"></a>107 Park Street South, Mora, MN 55051<br>
-            320-679-2661</a></h7>
-
-    <!--footer-->
-    <footer class="footer">
-        <div class="footer-nav">
-            <div id="footerh1"><span>COMMERCIAL PRINTING</span></div>
-            <div class="footer-nav ul">
-                <li class="selected"><a href="products.html"><span>PRINT PRODUCTS</span></a></li>
-                <li class="selected"><a href="services.html"><span>PRINT SERVICES</span></a></li>
+        <!--print services section-->
+        <div class="copybox">
+            <div id="sidebar-services">
+                <img src="images/services-image-home.jpg" alt="stack of booklets showing binding">
             </div>
 
+            <div id="printservices">
+                <h3><a name="h3"></a>COMMERCIAL PRINTING SERVICES</h3></a></h3>
+                <h4>We can take your projects from start to finish.</h4>
+                <printservices-ul dir="rtl">
+                    <li>Graphic Design Services</li>
+                    <li>Bindery</li>
+                    <li>Fulfillment</li>
+                    <li>Large Format Printing</li>
+                </printservices-ul>
+                <button class="button button2"><a href="services.html" style=text-decoration:none>SEE ALL
+                        PRODUCTS</a></button>
+            </div>
+        </div>
+
+        <!--copy center section-->
+        <div class="sidebar-copycenter">
+            <img src="images/copy-center-image-home.jpg" alt="print materials">
+        </div>
+
+        <div id="ccenter">
+            <h5>COPY CENTER</h5>
+            <h6>Stop by our copy center for same day service.</h6>
+            <ccenter-ul>
+                <li>Full-Color Copies</li>
+                <li>Scanning</li>
+                <li>Faxing</li>
+            </ccenter-ul><br><br><br><br><br>
+            <h7><a name="h5"></a>107 Park Street South, Mora, MN 55051<br>
+                320-679-2661</a></h7>
+
+        </div>
+        <!--footer-->
+        <footer class="footer">
             <div class="footer-nav">
-                <div id="footerh1"><span>COMPANY</span></div>
+                <div id="footerh1"><span>COMMERCIAL PRINTING</span></div>
                 <div class="footer-nav ul">
-                    <li class="selected"><a href="about.html"><span>ABOUT US</span></a></li>
-                    <li class="selected"><a href="contact.html"><span>CONTACT</span></a></li>
+                    <li class="selected"><a href="products.html"><span>PRINT PRODUCTS</span></a></li>
+                    <li class="selected"><a href="services.html"><span>PRINT SERVICES</span></a></li>
                 </div>
-            </div>
-    </footer>
-</div>
-</div>
+
+                <div class="footer-nav">
+                    <div id="footerh1"><span>COMPANY</span></div>
+                    <div class="footer-nav ul">
+                        <li class="selected"><a href="about.html"><span>ABOUT US</span></a></li>
+                        <li class="selected"><a href="contact.html"><span>CONTACT</span></a></li>
+                    </div>
+                </div>
+        </footer>
+    </div>
 
 
 </body>
