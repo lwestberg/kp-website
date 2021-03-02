@@ -1,27 +1,47 @@
-#boxzero{
+#slider {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+ 
+#fadedscreen {
+    width: 100%;
+    height: 300px;    
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 15;
+}
+ 
+.box {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 415px;
+    width: 100%;
+}
+.current {
+    z-index: 10;
+}
+
+.waiting {
+    z-index: 3;
+}
+  
+#boxzero {
     background-image: url(images/0.jpg);
     background-size: cover;
-    background-position: center center;   
+    background-position: center center;
 }
-
-#boxone{
-    background-image:url(images/1.jpg);
+#boxone {
+    background-image: url(images/1.jpg);
     background-size: cover;
-    background-position:center center;
-    visibility:hidden;
+    background-position: center center;
+    visibility: hidden;
 }
-
-#boxtwo{
-    background-image:url(images/2.jpg);
+#boxtwo {
+    background-image: url(images/2.jpg);
     background-size: cover;
-    background-position:center center;
-    visibility:hidden;
-}
-
-.current{
-    z-index:10;
-}
-
-.waiting{
-    z-index:3;
+    background-position: center center;
+    visibility: hidden;
 }
